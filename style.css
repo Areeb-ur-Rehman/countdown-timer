@@ -1,5 +1,9 @@
-
+* { 
+    box-sizing: border-box;
+}
 
 body {
-    background-image: url(https://unsplash.com/photos/green-grassland-during-night-time-vFrhuBvI-hI);
+    background-image: url("./assets/Moon.jpg.jpg");
+    min-height: 100vh;
+    background-size: cover;
 }
