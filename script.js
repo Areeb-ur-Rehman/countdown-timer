@@ -1,10 +1,21 @@
-const newYears = '1st Jan 2024';
+const newYears = '1 Jan 2024';
 
 function countdown () {
     const newYearsDate = new Date(newYears);
-    const currentdate = new Date ();
+    const currentDate = new Date ();
 
-    console.log(newYearsDate - currentdate);
+    const seconds = (newYearsDate - currentDate) / 1000;
+
+    const days = Math.floor(seconds / 3600 /24);
+    const hours = Math.floor(seconds / 3600 % 24);
+    const minutes = Math.floor(seconds / 60 % 24 % 60);
+
+    console.log(days, hours, minutes);
 }
 
+//Initial Call
 countdown();
+
+setInterval(countdown, 1000);
+
+
