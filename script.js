@@ -29,6 +29,6 @@ function countdown () {
 //Initial Call
 countdown();
 
-setInterval(countdown, 100000);
+setInterval(countdown, 1000);
 
 
